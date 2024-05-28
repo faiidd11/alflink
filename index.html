@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link rel="stylesheet" href="output.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- AWAL WRAPPER -->
+    <div class="wrapper">
+        <!-- AWAL SIDEBAR -->
+        <div class="sidebar fixed top-0 bottom-0 z-50 lg:hidden left-[-1000px] w-full p-2 bg-black text-white transition-all duration-500">
+            <div class="mobilemenu m-8 text-2xl py-5 cursor-pointer">
+                <div class="hover:text-blue-700 absolute right-5 top-3">
+                    <i class="fa-solid fa-x" onclick="Open()"></i>
+                </div>
+                <ul class="font-sans">
+                    <li class="font-bold pb-3 hover:text-blue-400 pt-3 border-b-2 border-gray-500"><a href="https://alflink.com/home">HOME</a></li>
+                    <li class=" pb-3 pt-3 hover:text-blue-400 border-b-2 border-gray-500"><a href="https://alflink.com/about-us">ABOUT US</a></li>
+                    <li class=" pb-3 pt-3 hover:text-blue-400 border-b-2 border-gray-500"><a href="https://alflink.com/pproducts">PPRODUCTS</a></li>
+                    <li class=" pb-3 pt-3 hover:text-blue-400"><a href="https://alflink.com/contact">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- AKHIR SIDE BAR -->
+
+        <!-- AWAL NAVBAR GERAK -->
+        <header class="navbar p-3 z-10 flex justify-center fixed top-0 right-0 left-0 transition duration-500">
+            <div class="flex justify-between w-[95%]">
+                <div class="img">
+                    <img src="gambar/logo.png" alt="" class="h-16 cursor-pointer">
+                </div>
+                <div class="flex items-center">
+                    <ul class="font-sans text-white lg:flex gap-8 hidden">
+                        <li class="cursor-pointer font-bold"><a href="https://alflink.com/home">HOME</a></li>
+                        <li class="cursor-pointer"><a href="https://alflink.com/about-us">ABOUT US</a></li>
+                        <li class="cursor-pointer"><a href="https://alflink.com/pproducts">PPRODUCTS</a></li>
+                        <li class="cursor-pointer"><a href="https://alflink.com/contact">CONTACT</a></li>
+                    </ul>
+                </div>
+                <div class="lg:hidden block text-white hover:text-blue-700 pt-4 text-lg cursor-pointer">
+                    <i class="fa-solid fa-bars" onclick="Open()"></i>
+                </div>
+            </div>
+        </header>
+        <!--AKHIR NAVBAR GERAK  -->
+
+        <!-- BACKGROUND ATAS -->
+        <div class="bg-black relative font-sans">
+            <img src="gambar/banner.webp" alt="" class="w-[100%] opacity-20 sm:h-[500px] lg:h-[470px]">
+            <div class="text-white justify-center absolute top-[20%] font-extrabold items-center text-5xl sm:top-[20%] sm:left-[3%] md:top-[21%] lg:top-[30%] lg:left-[20%] font-sans">
+                ALFLink <br> Optical Transceivers
+            </div>
+        </div>
+
+        <!-- AKHIR BACKGROUND ATAS -->
+
+        <!-- AWAL TIGA GAMBAR TENGAH -->
+        <div class="flex justify-center items-center h-[100%] font-sans ">
+            <div class="flex justify-evenly sm:flex-col md:flex-col lg:flex-row sm:w-[91%] md:w-[93%] lg:w-[91%]">
+                <div class="bg-gray-900 overflow-hidden relative cursor-pointer group sm:h-40 sm:w-[100%] md:h-[470px] lg:h-[480px] md:w-[100%] lg:w-64 sm:mb-3 sm:mt-10 md:mt-14 lg:mt-12 lg:mb-12">
+                    <img src="gambar/New-Products.webp" alt="" class="sm:h-40 sm:w-[100%] md:h-[100%] lg:h-[100%] opacity-60 lg:group-hover:scale-110 lg:group-hover:opacity-70 transition duration-700 scale-149 ">
+                    <div class="text-white justify-center text-center absolute font-bold lg:group-hover:scale-90 text-4xl sm:right-[29%] sm:top-[40%] md:text-5xl md:top-[45%] lg:top-[40%] lg:right-[12%] font-sans">
+                        New <br class="sm:hidden md:hidden lg:block font-sans"> Products
+                    </div>
+                </div>
+
+                <div class="bg-gray-900 overflow-hidden relative cursor-pointer group sm:h-40 sm:w-[100%] md:h-[470px]  lg:h-[480px] md:w-[100%] lg:w-64 sm:mb-3 sm:mt-3 md:mt-9 lg:mt-12 lg:mb-12">
+                    <img src="gambar/Most-Popular.webp" alt="" class="sm:h-40 sm:w-[100%] md:h-[100%] lg:h-[100%] opacity-60 lg:group-hover:scale-110 lg:group-hover:opacity-70 transition duration-700">
+                    <div class="text-white justify-center text-center absolute font-bold lg:group-hover:scale-90 text-4xl sm:right-[29%] sm:top-[40%] md:text-5xl md:top-[45%] lg:top-[40%] lg:right-[16%] font-sans">
+                        Most <br class="sm:hidden md:hidden lg:block font-sans"> Popular
+                    </div>
+                </div>
+
+                <div class="bg-gray-900 overflow-hidden relative cursor-pointer group sm:h-40 sm:w-[100%] md:h-[470px] lg:h-[480px] md:w-[100%] lg:w-64 sm:mb-9 sm:mt-3 md:mt-9 md:mb-14 lg:mt-12 lg:mb-12">
+                    <img src="gambar/best-value.webp" alt="" class="sm:h-40 sm:w-[100%] md:h-[100%] lg:h-[100%] opacity-60 lg:group-hover:scale-110 lg:group-hover:opacity-70 transition duration-700">
+                    <div class="text-white justify-center text-center absolute font-bold lg:group-hover:scale-90 text-4xl sm:right-[35%] sm:top-[40%] md:text-5xl md:top-[45%] lg:top-[40%] lg:right-[25%] font-sans">
+                        Best <br class="sm:hidden md:hidden lg:block font-sans">Value
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- AKHIR TIGA GAMBAR TENGAH -->
+
+        <!-- AWAL FOOTER -->
+        <div class="bg-black h-48 flex justify-center items-center flex-col font-sans">
+            <div class="justify-evenly mb-5">
+                <h1 class="text-white font-bold">
+                    ALFLink
+                </h1>
+            </div>
+            <div class="text-white justify-evenly ">
+                <span>
+                    Email:
+                </span>
+                <span class="text-blue-500 hover:text-blue-300 cursor-pointer">
+                    info@alflink.com
+                </span>
+                <span>
+                    Tel:
+                </span>
+                <span class="text-blue-500 hover:text-blue-300 cursor-pointer">
+                    +86 19842772416
+                </span>
+            </div>
+        </div>
+        <div class="cursor-pointer fixed bottom-5 right-5 h-16 w-16 bg-blue-600 rounded-full shadow-black text-white flex justify-center items-center text-3xl">
+            <i class="fa-solid fa-message"></i>
+        </div>
+        <!-- AKHIR FOOTER -->
+
+        <!-- AKHIR WRAPPER -->
+    </div>
+
+        <!-- AWAL JAVA SCRIPT -->
+        <script>
+            var alflink = document.querySelector("header")
+            window.addEventListener("scroll", ()=> {
+                if (document.documentElement.scrollTop > 0) {
+                    alflink.classList.add("bg-black"); 
+                }else {
+                    alflink.classList.remove("bg-black");
+                }
+                });
+            function Open(){
+                document.querySelector('.sidebar').classList.toggle('left-[-1000px]');
+            }
+        </script>
+        <!-- AKHIR JAVA SCRIPT -->
+</body>
+</html>
